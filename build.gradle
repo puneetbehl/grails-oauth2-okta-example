@@ -22,7 +22,6 @@ apply plugin:"com.bertramlabs.asset-pipeline"
 apply plugin:"org.grails.grails-gsp"
 
 repositories {
-    mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
 }
 
@@ -52,7 +51,7 @@ dependencies {
     implementation "org.grails.plugins:gsp"
     implementation "org.grails.plugins:spring-security-core:5.0.0"
     implementation "org.grails.plugins:spring-security-oauth2:2.0.0-RC1"
-    implementation "org.grails.plugins:spring-security-oauth2-okta:1.0.0-SNAPSHOT"
+    implementation project(":spring-security-oauth2-okta")
     profile "org.grails.profiles:web"
     runtimeOnly "org.glassfish.web:el-impl:2.2.1-b05"
     runtimeOnly "com.h2database:h2"

@@ -1,1 +1,3 @@
+include "spring-security-oauth2-okta"
+project(":spring-security-oauth2-okta").projectDir = new File(settingsDir, "plugin")
 rootProject.name = 'grails-okta-oauth2'
